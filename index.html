@@ -6,8 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tuong Roth's Responsive CV</title>
-  <link rel="stylesheet"  href="./style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"  href="style.css"/>  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 </head>
 
@@ -16,7 +15,7 @@
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
-  font-family: 'Popppins'. sans-serif;
+  font-family: 'Popppins', sans-serif;
  }
  
  
@@ -35,12 +34,12 @@
  position: relative;
  width: 100%;
  max-width: 1000px;
- min-height: 1000px;
+ min-height: 100px;
  margin: 50px;
  background: #fff;
  display: grid;
  grid-template-columns: 1fr 2fr;
- box-shadow: 0 35px 55px rgba(0,0,0,1);
+ box-shadow: 0 35px 55px rgba(0,0,0,0.1);
  }
  
  .container .left_side
@@ -53,7 +52,7 @@
  
    
  
- .profiletext
+ .profileText
  {
    position: relative;
    display: flex;
@@ -63,8 +62,15 @@
    box-shadow: 1px solid rgba(225,225,225,0.2);
    
    }
- 
-   .profiletext .imgBx img
+   .profileText .imgBx 
+   {
+     position: relative;
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     overflow: hidden;
+     }
+   .profileText .imgBx img
  
    {
      position: absolute;
@@ -88,8 +94,7 @@
        .profileText h2 span
      {
        
-       font: size 0.8em;;
-      
+       font-size: 0.8em;;
        font-weight: 300;
    
        }
@@ -116,14 +121,12 @@ position: relative;
        }
 
        .contactInfo ul li
-{
-       
+{      
 position: relative;
 list-style: none;
 margin: 10px 0;
 cursor: pointer;
-
-       }
+}
 
        .contactInfo ul li .icon
 {
@@ -141,31 +144,165 @@ color: #03a9f4;
       
 color: #fff;
 font-weight: 300;
+ }
 
-       }
+.contactInfo.education li
+{
+  margin-bottom:15px;
+}
 
-       .container .right_side
+
+.contactInfo.education h5
+
+{
+Color: #03a9f4;
+font-weight: 500;
+}
+
+.contactInfo.education h4 
+
+{
+Color: #fff;
+font-weight: 500;
+}
+
+.contactInfo.language .percent
+{
+     position: relative;
+   background-color: #081921;
+     width: 100%;
+     height: 6px;
+     display: block;
+     margin-top: 5px;
+     }
+     .contactInfo.language .percent div
+{
+     position: absolute;
+   background-color:#03a9f4;
+    top: 0;
+     left: 0;
+     height: 100%;
+     display: block;
+
+     }
+
+
+     
+.container .right_side
    {
      position: relative;
-      background: #fff;
+      background-color: #fff;
      padding: 40px;
      }
-       
+.about
+      {
+margin-bottom: 50px;
+}
+
+
+.about:last-child 
+
+ {
+  margin-bottom: 0;
+}
+
+.title2
+{ color:  #003147;
+Text-transform: uppercase;
+Letter-spacing: 1px;
+Margin-bottom: 10px;} 
+
+p {color: #333;}
+
+
+.about .box
+{display: flex; 
+Flex-direction: row;
+Margin: 20px 0; }
+
+.about .box .year-company
+{min-width: 150px;} 
+
+.about .box .year-company h5 
+{text-transform: uppercase;
+Color: #848c90;
+Font-weight: 600;
+}
+
+.about .box .text h4
+{text-transform: uppercase;
+Color: #2a7da2;
+font-size: 16px;}
+
+
+.skills .box
+ { 
+position: relative;
+Width: 100%;
+Display: grid; 
+grid-template-columns: 150px 1fr;
+Justify-content: center;
+align-items: center;}
+
+.skills .box h4
+{text-transform: uppercase;
+Color: #848c99;
+Font-weight: 500;}
+
+
+
+
+.skills .box .percent
+
+{ position: relative;
+Width: 100%;
+Height: 10px;
+Background: #f0f0f0;}
+
+.skills .box .percent div
+
+{ position: absolute;
+Top: 0;
+Height: 100%;
+Left : 0;
+Background: #03a9f4; }
+
+.interest ul
+
+{ display: grid;
+grid-template-columns: repeat(4,1fr); }
+
+.interest ul li
+{ list-style: none;
+color: #333;
+font-weight: 500;
+margin: 10px 0; }
+
+
+.interest ul li .fa
+{ color: #03a9f4;
+font-size: 18px; }
        </style>
+
+
+
+
+
 <body>
  <Div class="container">
    <div class="left_side"> 
     <div class="profileText">
-     <div class="img8x">
+     <div class="imgBx">
      <img src=""> </div>
-     <h2>Tuong Roth<br><span> Web developer</span></h2>
+     <h2>Tuong Roth<br><span>Web Developer</span></h2>
     </div>
+
     <div class="contactInfo">
       <h3 class="title">Contact Info</h3>
       <ul>
         <li>
           <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-          <span class="text">+358 4423 79779</span>
+          <span class="text">+358442379779</span>
         </li>
         <li>
           <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
@@ -181,7 +318,7 @@ font-weight: 300;
         </li>
         <li>
           <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-          <span class="text">Viet Nam, Helsinki, Finland</span>
+          <span class="text">Helsinki, Finland</span>
         </li>
       </ul>
 
@@ -192,37 +329,135 @@ font-weight: 300;
       <h3 class="title">Education</h3>
       <ul>
         <li>
-          <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-          <span class="text">+358 4423 79779</span>
+          <h5>2019 - 2022</h5>
+          <h4>Bachelor Degree in IB</h4>
+          <h4>University Haaga-Helia</h4>
         </li>
+
         <li>
-          <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-          <span class="text">admin@drrnarcissist.com</span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
-          <span class="text">rothnarcissistguide.com</span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-          <span class="text">www.linked.com</span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-          <span class="text">Viet Nam, Helsinki, Finland</span>
+          <h5>2022 - 2023</h5>
+          <h4>Web Developer </h4>
+          <h4>Online Course</h4>
         </li>
       </ul>
-
-    </div>
-       
-       
+    </div>  
+    
+    <div class="contactInfo language">
+      <h3 class="title">Languages</h3>
+      <ul>
+        <li>
+          <span class="text">English</span>
+          <span class="percent">
+          <div style="width: 90%;"></div> </span>
+        </li>
+        <li>
+          <span class="text">Finnish</span>
+          <span class="percent">
+          <div style="width: 48%;"></div> </span>
+        </li>
+        <li>
+          <span class="text">Vietnamese</span>
+          <span class="percent">
+            <div style="width: 85%;"></div> </span>
+        </li>
+      </ul>
+    </div>  
   </div>
 
 
+
+   <div class="right_side"> 
+   <div class="about">
+    <h2 class="title2" >Profile</h2>
+    <p> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu <br> àasffwfwfwaf</p>
 </div>
-   <div class="right_side"> </div>
-      
+
+<div class="about">
+  <h2 class="title2">Experience</h2>
+
+  <div class="box">
+<div class="year-company">
+  <h5>2021 - 2022</h5>
+  <h5>Company Name </h5>
+  </div>
+  <div class="text">
+  <h4>Digital Marketing</h4>
+  <p> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu <br> àasffwfwfwaf</p>
 </div>
+</div>
+
+
+<div class="box">
+  <div class="year-company">
+    <h5>2022 - 2023</h5>
+    <h5> Company Name  </h5>
+    </div>
+    <div class="text">
+    <h4>HTML, CSS Projects</h4>
+    <p> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu <br> àasffwfwfwaf</p>
+  </div>
+</div>
+</div>
+
+<div class="about skills">
+  <h2 class="title2">Professional Skills</h2>
+  <div class="box">
+  <h4>Html</h4>
+  <div class="percent">
+    <div style="width: 70%;"> </div>
+  </div>
+</div>
+  
+  
+  <div class="box">
+  <h4>CSS</h4>
+  <div class="percent">
+    <div style="width: 98%;"> </div>
+  </div>
+</div>
+  
+  
+  <div class="box">
+  <h4>Javascript</h4>
+  <div class="percent">
+    <div style="width: 95%;"> </div>     
+  </div>
+  </div>
+  
+  
+  <div class="box">
+  <h4>Illustrator</h4>
+  <div class="percent">
+    <div style="width: 90%;"> </div>
+  </div>
+  </div>
+  
+  
+  <div class="box">
+  <h4>Adobe XD</h4>
+  <div class="percent">
+     <div style="width: 75%;"> </div>
+ </div>
+  </div>
+  </div>
+  
+  <div class="about interest">
+  <h2 class="title2">Interest</h2>
+  <ul>
+  <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gaming</li>
+  <li><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</li>
+  <li><i class="fa fa-music" aria-hidden="true"></i> Singing</li>
+  <li><i class="fa fa-book" aria-hidden="true"></i> Reading</li>
+  </ul>
+
+</div>
+</div>
+</div>
+
+
+
+
 </body>
 
 </html>
+
