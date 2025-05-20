@@ -1,476 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tuong Roth's Responsive CV</title>
-  <link rel="stylesheet"  href="style.css"/>  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 
-<style>
-* {
-  margin: 0;
-  padding: 0; 
-  box-sizing: border-box;
-  font-family: 'Popppins', sans-serif;
- }
- 
- 
- body 
- 
- {
-   background: lightblue;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
-  }
- 
-  .container
-  {
- position: relative;
- width: 100%;
- max-width: 1000px;
- min-height: 100px;
- margin: 50px;
- background: #fff;
- display: grid;
- grid-template-columns: 1fr 2fr;
- box-shadow: 0 35px 55px rgba(0,0,0,0.1);
- }
- 
- .container .left_side
- {
-   position: relative;
-   
-   background: #003147;
-   padding: 40px;
-   }
- 
-   
- 
- .profileText
- {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding-bottom: 20px;
-   box-shadow: 1px solid rgba(225,225,225,0.2);
-   
-   }
-   .profileText .imgBx 
-   {
-     position: relative;
-     width: 200px;
-     height: 200px;
-     border-radius: 50%;
-     overflow: hidden;
-     }
-   .profileText .imgBx img
- 
-   {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     }
- 
-     .profileText h2
-     {
-       color:#fff;
-       font-size:1.5em;
-       margin-top: 20px;
-       text-transform: uppercase;
-       text-align: center;
-       font-weight: 600;
-       line-height: 1.4em;
-       }
-       .profileText h2 span
-     {
-       
-       font-size: 0.8em;;
-       font-weight: 300;
-   
-       }
-
-.contactInfo
-{
-       
-padding-top: 40px;
-       }
-
-.title
-{
-       color:#fff;
-       margin-bottom: 20px;
-       text-transform: uppercase;
-       font-weight: 600;
-       letter-spacing: 1px;
-       }
-
-       .contactInfo ul
-{
-       
-position: relative;
-       }
-
-       .contactInfo ul li
-{      
-position: relative;
-list-style: none;
-margin: 10px 0;
-cursor: pointer;
-}
-
-       .contactInfo ul li .icon
-{
-       
-display: inline-block;
-width: 30px;
-font-size: 18px;
-cursor: pointer;
-color: #03a9f4;
-
-       }
-.contactInfo ul li span a
-  {
-      
-color: #fff;
-font-weight: 300;
- }
-       .contactInfo ul li span
-{
-      
-color: #fff;
-font-weight: 300;
- }
-
-.contactInfo.education li
-{
-  margin-bottom:15px;
-}
-.contactInfo.education li a 
-{
- color: white;
-}
-.contactInfo.education h5
-
-{
-Color: #03a9f4;
-font-weight: 500;
-}
-
-.contactInfo.education h4 
-
-{
-Color: #fff;
-font-weight: 500;
-}
-
-.contactInfo.language .percent
-{
-     position: relative;
-   background-color: #081921;
-     width: 100%;
-     height: 6px;
-     display: block;
-     margin-top: 5px;
-     }
-     .contactInfo.language .percent div
-{
-     position: absolute;
-   background-color:#03a9f4;
-    top: 0;
-     left: 0;
-     height: 100%;
-     display: block;
-
-     }
-
-
-     
-.container .right_side
-   {
-     position: relative;
-      background-color: #fff;
-     padding: 40px;
-     }
-.about
-      {
-margin-bottom: 50px;
-}
-
-
-.about:last-child 
-
- {
-  margin-bottom: 0;
-}
-
-.title2
-{ color:  #003147;
-Text-transform: uppercase;
-Letter-spacing: 1px;
-Margin-bottom: 10px;} 
-
-p {color: #333;}
-
-
-.about .box
-{display: flex; 
-Flex-direction: row;
-Margin: 20px 0; }
-
-.about .box .year-company
-{min-width: 150px;} 
-
-.about .box .year-company h5 
-{text-transform: uppercase;
-Color: #848c90;
-Font-weight: 600;
-}
-
-.about .box .text h4
-{text-transform: uppercase;
-Color: #2a7da2;
-font-size: 16px;}
-
-
-.skills .box
- { 
-position: relative;
-Width: 100%;
-Display: grid; 
-grid-template-columns: 150px 1fr;
-Justify-content: center;
-align-items: center;}
-
-.skills .box h4
-{text-transform: uppercase;
-Color: #848c99;
-Font-weight: 500;}
-
-
-
-
-.skills .box .percent
-
-{ position: relative;
-Width: 100%;
-Height: 10px;
-Background: #f0f0f0;}
-
-.skills .box .percent div
-
-{ position: absolute;
-Top: 0;
-Height: 100%;
-Left : 0;
-Background: #03a9f4; }
-
-.interest ul
-
-{ display: grid;
-grid-template-columns: repeat(4,1fr); }
-
-.interest ul li
-{ list-style: none;
-color: #333;
-font-weight: 500;
-margin: 10px 0; }
-
-
-.interest ul li .fa
-{ color: #03a9f4;
-font-size: 18px; }
-       </style>
-
-
-
-
-
 <body>
- <Div class="container">
-   <div class="left_side"> 
-    <div class="profileText">
-     <div class="imgBx">
-     <img src="400503978_1020673705715382_93665961818245476_n.png"> </div>
-     <h2>Tuong Roth<br><span>BIT | Web Developer</span></h2>
+  <div class="container">
+    <div class="left_side">
+      <div class="profileText">
+        <div class="imgBx">
+          <img src="400503978_1020673705715382_93665961818245476_n.png" alt="Tuong Roth Profile Picture" />
+        </div>
+        <h2>Tuong Roth<br /><span>BIT | Web Developer</span></h2>
+      </div>
+
+      <div class="contactInfo">
+        <h3 class="title">Contact Info</h3>
+        <ul>
+          <li>
+            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <span class="text">+358415776919</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+            <span class="text">Tngroth0703@gmail.com</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+            <span class="text"><a href="https://tuongroth.github.io/Roth-s-Portfolio/#" target="_blank" rel="noopener noreferrer">Roth's Portfolio</a></span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+            <span class="text"><a href="https://www.linkedin.com/in/tuongroth/" target="_blank" rel="noopener noreferrer">My Linkedin</a></span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+            <span class="text">Helsinki, Finland</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contactInfo education">
+        <h3 class="title">Education</h3>
+        <ul>
+          <li>
+            <h5>2019 - 2022</h5>
+            <h4>Bachelor Degree in IB</h4>
+            <h4>Haaga-Helia University</h4>
+            <a href="434887767_945495716901389_3473288804220534705_n.jpg" target="_blank" rel="noopener noreferrer">International Business Certificate</a>
+          </li>
+
+          <li>
+            <h5>2024 - 2025</h5>
+            <h4>Full-stack Master</h4>
+            <h4><a href="#" >Helsinki of University full-stack master</a></h4>
+            <a href="https://tuongroth.github.io/Personal-Projects/" target="_blank" rel="noopener noreferrer">Personal Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contactInfo language">
+        <h3 class="title">Languages</h3>
+        <ul>
+          <li>
+            <span class="text">English</span>
+            <span class="percent"><div style="width: 90%;"></div></span>
+          </li>
+          <li>
+            <span class="text">Finnish</span>
+            <span class="percent"><div style="width: 38%;"></div></span>
+          </li>
+          <li>
+            <span class="text">Vietnamese</span>
+            <span class="percent"><div style="width: 85%;"></div></span>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="contactInfo">
-      <h3 class="title">Contact Info</h3>
-      <ul>
-        <li>
-          <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-          <span class="text">+358442379779</span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-          <span class="text">Tngroth0703@gmail.com</span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
-          <span class="text"><a href=https://tuongroth.github.io/Roth-s-Portfolio/#>Roth's Porrfolio</a></span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-          <span class="text"><a href="https://www.linkedin.com/in/tuongroth/" >My Linkedin</a> </span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-          <span class="text">Helsinki, Finland</span>
-        </li>
-      </ul>
+    <div class="right_side">
+      <div class="about">
+        <h2 class="title2">Profile</h2>
+        <p>
+          Currently leading a personal project, developing a responsive frontend with React.js and enhancing backend
+          performance with Node.js and MongoDB. Recently completed a Full Stack Master Course, gaining expertise in
+          JavaScript and modern technologies. Enhanced both asynchronous programming and real-time data handling capabilities,
+          significantly improving operational efficiency and overall system performance.
+        </p>
+      </div>
 
+      <div class="about">
+        <h2 class="title2">Experience</h2>
+
+        <div class="box">
+          <div class="year-company">
+            <h5>2024 - 2025</h5>
+            <h5>Work Experience</h5>
+          </div>
+          <div class="text">
+            <h4>Solving the Crisis Invasion: The Parallel Journeys of Vietnam and Finland (2018–2025)</h4>
+            <p>
+              Engineered a robust backend system utilizing Node.js, Express, and MongoDB, while integrating JWT-based
+              authentication for enhanced security, and instituted CI/CD pipelines with GitHub Actions, Developed a
+              responsive and intuitive frontend interface using React.js and Tailwind CSS, ensuring seamless API
+              communication via Axios. 
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="year-company">
+            <h5>2022 - 2025</h5>
+            <h5>Haaga-Helia University of Applied Sciences Bachelor's Degree, International Business</h5>
+          </div>
+          <div class="text">
+            <h4>Helsinki of University | Full Stack Master</h4>
+            <p>
+              One notable project includes crafting a responsive personal portfolio website with engaging
+              CSS animations. Additionally, I designed an e-commerce product page with a focus on user-friendly layouts
+              and transitions. Having completed several projects on GitHub, I am eager to apply and expand my expertise
+              in DOM manipulation, API integrations, and UI design to contribute to innovative tech solutions in a
+              real-world IT environment.
+            </p>
+            <a href="https://tuongroth.github.io/Personal-Projects/" target="_blank" rel="noopener noreferrer">Personal Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about skills">
+        <h2 class="title2">Professional Skills</h2>
+        <div class="box">
+          <h4>Javascript</h4>
+          <div class="percent">
+            <div style="width: 98%;"></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>MongoDB</h4>
+          <div class="percent">
+            <div style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>React</h4>
+          <div class="percent">
+            <div style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>SQL</h4>
+          <div class="percent">
+            <div style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>REST APIs</h4>
+          <div class="percent">
+            <div style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about interest">
+        <h2 class="title2">Interest</h2>
+        <ul>
+          <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gaming</li>
+          <li><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</li>
+          <li><i class="fa fa-music" aria-hidden="true"></i> Singing</li>
+          <li><i class="fa fa-book" aria-hidden="true"></i> Reading</li>
+        </ul>
+      </div>
     </div>
-
-
-    <div class="contactInfo education">
-      <h3 class="title">Education</h3>
-      <ul>
-        <li>
-          <h5>2019 - 2022</h5>
-          <h4>Bachelor Degree in IB</h4>
-          <h4>Haaga-Helia University</h4>
-        <a href="434887767_945495716901389_3473288804220534705_n.jpg" >International Business Certificate</a>
-    
-        </li>
-
-        <li>
-          <h5>2022 - 2023</h5>
-          <h4>Web Developer </h4>
-          <h4> <a href=" 433083060_390709713855710_4679282046537646947_n.png" >W3Schools JavaScript Certificate</a></h4>
-          <a href="https://tuongroth.github.io/Personal-Projects/">Personal Projects</a>
-         
-        </li>
-      </ul>
-    </div>  
-    
-    <div class="contactInfo language">
-      <h3 class="title">Languages</h3>
-      <ul>
-        <li>
-          <span class="text">English</span>
-          <span class="percent">
-          <div style="width: 90%;"></div> </span>
-        </li>
-        <li>
-          <span class="text">Finnish</span>
-          <span class="percent">
-          <div style="width: 38%;"></div> </span>
-        </li>
-        <li>
-          <span class="text">Vietnamese</span>
-          <span class="percent">
-            <div style="width: 85%;"></div> </span>
-        </li>
-      </ul>
-    </div>  
   </div>
-
-
-
-   <div class="right_side"> 
-   <div class="about">
-    <h2 class="title2" >Profile</h2>
-    <p> With a major in IB from Haaga Helia University and an IT certificate from W3Schools, my goal is to specialize in fullstack development with a focus on HTML, JavaScript, and CSS within the BIT market. Having completed several projects on GitHub, I am eager to apply and expand my expertise in DOM manipulation, API integrations, UI design, and browser event handling to contribute to innovative tech solutions in a real-world IT environment.</p>
-</div>
-
-<div class="about">
-  <h2 class="title2">Experience</h2>
-
-  <div class="box">
-<div class="year-company">
-  <h5>2021 - 2022</h5>
-  <h5>DD Carwash Chain </h5>
-  </div>
-  <div class="text">
-  <h4>Digital Marketing Specialist | DD Carwash Chain</h4>
-  <p> Led effective digital campaigns at DD Carwash, boosting online visibility by 30% outcome. Managed engaging social media strategies, connecting with customers. Improved website performance for a better user experience. Proven success in straightforward, trend-aware digital marketing.</p>
-
-  </div>
-</div>
-
-
-<div class="box">
-  <div class="year-company">
-    <h5>2022 - 2023</h5>
-    <h5>HTML, Javascript & CSS Project Practical </h5>
-    </div>
-    <div class="text">
-    <h4>HTML, Javascript | Aspiring IT Professional</h4>
-    <p> I've independently developed various projects using HTML, Javascript and CSS, showcasing my skills in web development. One notable project includes crafting a responsive personal portfolio website with engaging CSS animations. Additionally, I designed an e-commerce product page with a focus on user-friendly layouts and transitions.  Having completed several projects on GitHub, I am eager to apply and expand my expertise in DOM manipulation, API integrations, and UI design to contribute to innovative tech solutions in a real-world IT environment.</p>
-      <a href="https://tuongroth.github.io/Personal-Projects/" >Personal Projects</a> 
-    </div>
-</div>
-</div>
-
-<div class="about skills">
-  <h2 class="title2">Professional Skills</h2>
-  <div class="box">
-  <h4>Javascript</h4>
-  <div class="percent">
-    <div style="width: 70%;"> </div>
-  </div>
-</div>
-  
-  
-  <div class="box">
-  <h4>CSS</h4>
-  <div class="percent">
-    <div style="width: 98%;"> </div>
-  </div>
-</div>
-  
-  
-  <div class="box">
-  <h4>Html</h4>
-  <div class="percent">
-    <div style="width: 95%;"> </div>     
-  </div>
-  </div>
-  
-  
-  <div class="box">
-  <h4>Illustrator</h4>
-  <div class="percent">
-    <div style="width: 70%;"> </div>
-  </div>
-  </div>
-  
-  
-  <div class="box">
-  <h4>Adobe XD</h4>
-  <div class="percent">
-     <div style="width: 75%;"> </div>
- </div>
-  </div>
-  </div>
-  
-  <div class="about interest">
-  <h2 class="title2">Interest</h2>
-  <ul>
-  <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gaming</li>
-  <li><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</li>
-  <li><i class="fa fa-music" aria-hidden="true"></i> Singing</li>
-  <li><i class="fa fa-book" aria-hidden="true"></i> Reading</li>
-  </ul>
-
-</div>
-</div>
-</div>
-
-
-
-
 </body>
 
 </html>
-
