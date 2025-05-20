@@ -8,7 +8,7 @@ Check out the live demo here:
 [https://resumeupdate.vercel.app/](https://resumeupdate.vercel.app/)
 
 ## Screenshot
-
+![Resume Screenshot](https://github.com/tuongroth/screenshot/blob/main/assets/cvprofile.png)
 ![Resume Screenshot](https://github.com/tuongroth/screenshot/blob/main/assets/cvbody.png)
 
 ## Features
